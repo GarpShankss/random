@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-⦁	<title>Happy Birthday Bhoomi 💖✨</title>
+	<title>Happy Birthday Bhoomi 💖✨</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
 
@@ -103,10 +103,6 @@ body{
     color:#c44569;
     margin-bottom:1rem;
 }
-.photo {
-    object-fit: cover;
-    border-radius: 3px;
-}
 
 /* TYPEWRITER */
 .typewriter span{
@@ -133,16 +129,19 @@ body{
 }
 .photo-frame:hover{transform:rotate(0) scale(1.05)}
 
-.photo{
-    width:100%;
-    aspect-ratio:4/3;
-    background:#ffd7e5;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:'Dancing Script',cursive;
-    color:#c44569;
+.photo {
+    width: 100%;
+    height: auto;          /* 🔑 important */
+    display: block;
+    border-radius: 3px;
 }
+.photo-frame img {
+    max-height: 260px;
+    object-fit: contain;   /* NOT cover */
+    background: #fff;
+}
+
+
 
 /* 📸 CAPTION */
 .caption{
